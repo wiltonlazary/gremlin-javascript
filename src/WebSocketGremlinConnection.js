@@ -20,7 +20,7 @@ export default class WebSocketGremlinConnection extends EventEmitter {
 
   onOpen() {
     this.open = true;
-    this.emit('open');
+    this.emit('open', this.ws);
   }
 
   handleError(err) {

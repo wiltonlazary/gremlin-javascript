@@ -12,7 +12,7 @@ describe('.execute()', function() {
     });
   });
 
-  it('should queue command before the client is connected', function(done) {
+  it.skip('should queue command before the client is connected', function(done) {
     var client = gremlin.createClient();
 
     client.execute('g.V()', function() { });

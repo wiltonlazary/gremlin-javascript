@@ -12,6 +12,7 @@
     "coverage:travis": "babel-node ./node_modules/istanbul/lib/cli.js cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "examples:browser": "babel-node examples/server",
     "examples:node": "babel-node examples/node-example",
+    "examples:rxjs": "babel-node examples/rxjs",
     "test:node": "mocha ./test --compilers js:babel-register --recursive --reporter spec",
     "test:node:watch": "npm run test:node -- --watch"
   },
@@ -38,6 +39,7 @@
     "lodash": "^3.10.1",
     "node-uuid": "^1.4.3",
     "readable-stream": "^2.0.2",
+    "rx": "^4.1.0",
     "ws": "^0.8.0"
   },
   "devDependencies": {
